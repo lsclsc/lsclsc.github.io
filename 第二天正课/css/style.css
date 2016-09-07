@@ -1,0 +1,188 @@
+
+/*在css样式中默认的定位方式是static的
+absolute: 绝对定位
+fixed: 跳出流式布局 在整个文档中进行定位(常用于:浮动窗口,弹窗等)
+static: 默认的文档流式定位方式
+relative: 相对定位,相对于上一个非statis方式显示的元素
+
+*/
+
+html,body{
+  height: 100%;
+
+}
+  /*通过标签名字选中标签*/
+body{
+/*设置背景颜色*/
+/*background-color: #5e5d67;*/
+background-image: url('../images/4.jpg');
+background-repeat: no-repeat;
+margin: 0
+
+}
+
+.nav{
+background-color: #fff;
+height: 60px;
+width: 100%;
+margin: 0 auto;
+
+
+}
+
+/*此处的宽度百分比是基于上一层容器进行计算的
+.nav  .nav-item 选择到的是所有class="nav"的子项中的class="nav-item"
+*/
+/*.nav .nav-item{
+width: 15%;
+height: 50px;
+margin-top: 5px;
+background-color: #da7b7b;
+display: inline-block;
+margin-left:5%;
+
+
+}*/
+/*nth-child(?)
+选择指定位置内部的第几个标签
+此处开始位置是1
+选择class="nav"中的第一个div 设置其距离左边的间距为10px
+*/
+.nav div:nth-child(1){
+margin-left: 10px;
+
+}
+
+.main{
+  width: 90%;
+  height: 900px;
+  /*background-color: #4b4949;*/
+  margin-left: 5%;
+}
+
+/*在流布局 中使用float 来改变位置显示*/
+.content{
+
+width: 40%;
+border-style: solid;
+border-color: #666666;
+border-width: 1px;
+float: right;
+}
+
+.content p{
+font-size: 16px;
+color: #eeeeee;
+line-height: 26px;
+/*这是设置文本内容当达到容器最大宽度时 自动换行*/
+word-wrap: break-word;
+
+}
+
+/*定义left-view的样式*/
+.left-view{
+/*background-color: red;*/
+background-image: url('../images/1.jpg');
+/*设置图片尺寸
+contain 在指定的位置展示图片 按照容器的尺寸进行缩放 图片不变形
+cover 在指定的位置显示图片 铺满整个屏幕
+如果设置成百分比 那么图片会出现拉伸效果
+*/
+background-size: cover;
+/*设置背景的重复方式*/
+background-repeat: no-repeat;
+/*
+背景图片展示的位置 left right center等.
+可以设置固定的数值 或者百分比(基于容器)
+ */
+background-position: center;
+/*设置边框 可以吧边框的几个属性写在一起实现*/
+border: solid 5px white;
+
+/*background*/
+
+
+
+
+width: 55%;
+height: 200px;
+float: left;
+
+
+}
+
+/*icons的容器*/
+.icons-container{
+  /*清除浮动*/
+  clear: both;
+  width: 100%;
+  border: solid 1px #999999;
+}
+
+.icons{
+width: 100px;
+height: 34px;
+background-image: url('../images/2.png');
+background-size: 300%;
+background-repeat: no-repeat;
+display: inline-block;
+/*background-position: -200px ;*/
+}
+.icons-1{
+background-position: 0 0;
+
+}
+.icons-2{
+  background-position: -100px -38px;
+}
+.icons-3{
+  background-position: -200px -75px;
+}
+
+.go-top{
+
+font-size: 18px;
+font-family: "微软雅黑";
+position:fixed;
+/*此元素将会脱离正常的页面*/
+
+top: 550px;
+right: 20px;
+
+text-decoration: none;
+background-color: #666666;
+opacity: 0.8;
+width: 60px;
+height: 60px;
+text-align: center;
+line-height: 20px;
+/*display: block;
+padding-top: 5px;*/
+
+}
+
+.go-top a{
+
+color: #fff;
+text-decoration: none;
+margin-top: 10px;
+
+/*设置 使a标签作为一个行内块元素进行显示*/
+display: inline-block;
+
+
+}
+
+/*页脚部分*/
+.footer{
+width: 100%;
+height:20px;
+color: #fff;
+background-color: #000;
+
+text-align: center;
+
+position: relative;
+bottom: 30px;
+
+}
