@@ -1,0 +1,106 @@
+body{
+
+margin: 30px;
+
+background-color: #333333;
+
+color: #fff;
+}
+div{
+color: #000000;
+
+}
+
+img{
+width: 50%;
+margin-top: 10px;
+
+}
+/*导航点击样式*/
+a{
+
+color: #fff;
+
+text-decoration: none;
+
+}
+nav{
+
+  margin-bottom: 10px;
+}
+
+nav a{
+
+  display: inline-block;
+
+    /*height: 30px;*/
+    line-height: 30px;
+    width: 30%;
+    font-size: 14px;
+
+}
+
+
+.touxiang{
+
+/*设置头像圆角样式显示*/
+
+/*border-radius: 50%;*/
+
+color: #333333;
+
+text-indent: 2em;
+padding: 20px 5px;
+
+
+}
+
+
+.container{
+  width: 100%;
+height: 500px;
+margin: 5px auto;
+border-style: solid;
+margin-top: 10px;
+text-align:left;
+color: #fff;
+
+}
+
+.school{
+width: 100%;
+height: 500px;
+margin: 5px auto;
+border-style: solid;
+color: #fff;
+
+}
+
+.hometown{
+
+  /*background-color: #eeeeee;*/
+  width: 100%;
+  height: 800px;
+  margin: 5px auto;
+  border-style: solid;
+  color: #fff;
+
+}
+.speciality{
+  /*background-color: #eeeeee;*/
+  width: 100%;
+  height: 300px;
+  margin: 5px auto;
+  border-style: solid;
+  color: #fff;
+
+}
+
+section{
+
+/*height: 800px;*/
+
+margin-top: 30px;
+
+
+}
